@@ -1,18 +1,52 @@
 .App {
   text-align: center;
 }
+.alert {
+  
+ /* opacity: 0; */
+  animation-name: alertAni;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+a{
+  color: black;
+  -webkit-text-stroke:0.4px;
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: white;
+}
+@keyframes alertAni {
+  0%{
+  opacity: 0.3;
+  }
+100%{
+  opacity: 1;
+}
 
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
+.textPreview{
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
+  font-weight: 800;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* #navBar{
+  background-color: black;
+  color: white;
+} */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.Appheader{
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
